@@ -10,3 +10,4 @@ int main()
     cout << a * (b / 100) <<"\n";
     cout << a * b << "\n";
 }
+ 
