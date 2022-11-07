@@ -1,0 +1,29 @@
+#include <iostream>
+#include <string>
+#include <algorithm>
+
+using namespace std;
+
+
+int main() {
+	string n;
+	
+    while (true) {
+        cin >> n;
+        string a = n;
+        reverse(n.begin(), n.end()); 
+        if (n == "0") { 
+            break;
+        }
+        if(n == a) { 
+            cout <<"yes\n";
+        }
+        else {
+            cout <<"no\n";
+        }
+    }  
+}
+
+***algorithm 파일에 리버스 시키는 힘수 있음
+반복문 돌리고 0나오면 빠져나오기
+continue 쓸 걸 ㅎ
