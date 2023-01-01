@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+int main (){
+    int T;
+    cin >> T;
+
+    while(1){
+        if(T==0){
+            break;
+        }
+        int H,W,N,h,w;
+        cin >> H >> W>>N;
+
+        h = N % H;
+        w = N/H;
+        if(h == 0)
+        {h =H;
+        w-=1;}
+
+
+        cout << h*100 + (w + 1) << endl;
+        T--;
+     }
+
+    return 0;
+}
